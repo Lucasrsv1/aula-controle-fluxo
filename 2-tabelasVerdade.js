@@ -20,6 +20,4 @@ console.log();
 console.log("Tabela Verdade da Negação (!):");
 console.log("| P     | !P    |");
 console.log(`| false | ${!false}  |`);
-console.log(`| false | ${!false}  |`);
-console.log(`| true  | ${!true} |`);
 console.log(`| true  | ${!true} |`);
