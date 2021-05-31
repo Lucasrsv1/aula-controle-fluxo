@@ -3,7 +3,7 @@ console.log();
 
 console.log("Escolha uma das formas abaixo:");
 console.log("1 - Quadrado (Área)");
-console.log("2 - Cubo (Volume e Área de Cada face)");
+console.log("2 - Cubo (Volume e Área de Cada Face)");
 var forma = +prompt("Escolha");
 
 if (forma !== 1 && forma !== 2) {
@@ -12,11 +12,12 @@ if (forma !== 1 && forma !== 2) {
 }
 
 console.log();
-var lado = +prompt(`Digite o valor do lado do ${forma == 1 ? "quadrado" : "cubo"}`);
+var lado = +prompt(`Digite o valor do lado do ${forma === 1 ? "quadrado" : "cubo"}`);
 
 switch (forma) {
 	case 2:
 		console.log(`Volume: ${Math.pow(lado, 3)}.`);
+		// Fall Through
 	case 1:
 		console.log(`Área: ${Math.pow(lado, 2)}.`);
 		break;
