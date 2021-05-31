@@ -1,4 +1,4 @@
-var input = 6;
+var input = prompt("Digite um número");
 var numero = +input;
 
 switch (numero % 2) {
